@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-center">
+        <a href="index.html">Home</a>
+        <a class="active" href="emmasoundboard.html">Soundboard</a>
+        <a href="numbergame copy.html">Number Game</a>
+    </div>
+</div>
+
+<div class="center-content">
+    <h1>Emma Soundboard</h1>
+
+    <div class="image-container">
+        <img src="IMG_7CE2B7359252-1.jpeg" alt="Image 1">
+        <img src="emma 2.jpeg" alt="Image 2">
+        <img src="emma 3.JPG" alt="Image 3">
+        <img src="emma 4.jpeg" alt="Image 4">
+        <img src="emma 5.jpeg" alt="Image 5">
+    </div>
+    
+    <div class="side-by-side button-container">
+        <button onclick="play_sound('emma_voice_1.mp3')">Aria Chant</button>
+        <button onclick="play_sound('emma_voice_2.mp3')">Hola</button>
+        <button onclick="play_sound('emma_voice_3.mp3')">Yassss Queeny</button>
+    </div>
+    
+    <div class="side-by-side button-container">
+        <button onclick="play_sound('emma_voice_4.mp3')">Slay Babes</button>
+        <button onclick="play_sound('emma_voice_5.mp3')">Purrrr</button>
+    </div>
+    
+    <audio id="emma_voice_1" src="emma_voice_1.mp3"></audio>
+    <audio id="emma_voice_2" src="emma_voice_2.mp3"></audio>
+    <audio id="emma_voice_3" src="emma_voice_3.mp3"></audio>
+    <audio id="emma_voice_4" src="emma_voice_4.mp3"></audio>
+    <audio id="emma_voice_5" src="emma_voice_5.mp3"></audio>
+   
+</div>
+
+<script>
+    function play_sound(filename) {
+        var audio = new Audio(filename);
+        audio.play();
+    }
+</script>
+</body>
+</html>

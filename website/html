@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Soundboard</title>
+</head>
+<body>
+<h1> Emma's Soundboard</h1>
+<button onclick="playSound(New Recording 6.mp3)">Sound1</button>
+<button onclick="playSound(New Recording 7.mp3)">Sound 2</button>
+<button onclick="playSound(New Recording 8.mp3)">Sound 3</button>
+<button onclick="playSound(New Recording 9.mp3)">Sound 4</button>
+<button onclick="playSound(New Recording 10.mp3)">Sound 5</button>
+
+<script>
+function playsound() {
+    var audio = new Audio();
+    audio.play();
+}
+</script>
+</body>
+</html>
